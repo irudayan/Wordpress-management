@@ -1,0 +1,41 @@
+/*----- Banner Section -----*/
+.banner-section h1, .about-section h2, .about-section h3, .about-section h4{
+  font-family: 'Crimson Text', serif;
+  font-weight: bold;
+}
+.about-section p{
+  font-family: 'Poppins', sans-serif;
+}
+
+/*----- About Section -----*/
+.about-section {
+  position: relative;
+  margin-top: -3em;
+  z-index: 999;
+  box-shadow: 0px 0px 12px #bbb;
+}
+.about-section h3{
+  position: relative;
+}
+.about-section h3:after {
+  content: "";
+  border-bottom: 3px solid #f1b64a;
+  padding: 20px 25px;
+  position: absolute;
+  left: 0;
+  width: 5%;
+}
+.about-section .block-editor-block-list__block{
+  margin: 0 0 20px;
+}
+.about-section .about-btn .wp-block-button__link{
+  padding: 14px 25px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+.about-section .about-btn .wp-block-button__link:hover{
+  background: #212121 !important;
+  color: #f1b64a !important;
+}

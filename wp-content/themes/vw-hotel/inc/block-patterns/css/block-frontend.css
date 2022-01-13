@@ -1,0 +1,66 @@
+/*----- Banner Section -----*/
+.banner-section, .about-section{
+  width: auto;
+  height: auto;
+}
+
+/*----- About Section -----*/
+.about-section {
+  position: relative;
+  margin-top: -3em;
+  z-index: 999;
+  box-shadow: 0px 0px 12px #bbb;
+}
+.about-section h3{
+  position: relative;
+}
+.about-section h3:after {
+  content: "";
+  border-bottom: 3px solid #f1b64a;
+  padding: 20px 25px;
+  position: absolute;
+  left: 0;
+}
+.about-section h2{
+  font-weight: 600 !important;
+}
+.about-section .about-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+.about-section .about-btn a{
+  padding: 14px 25px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.about-section .about-btn a:hover{
+  background: #212121 !important;
+  color: #f1b64a !important;
+}
+.about-section .about-img{
+  position: relative;
+}
+.about-section .about-img:hover .about-btn{
+  width: 100%;
+}
+/*------ Media CSS ------*/
+@media screen and (max-width: 768px) and (min-width: 576px){
+  .banner-section .wp-block-column:first-child, .banner-section .wp-block-column:nth-child(3){
+    flex-basis: 15% !important;
+  }
+  .banner-section .wp-block-column:nth-child(2){
+    flex-basis: 65% !important;
+  }
+}
